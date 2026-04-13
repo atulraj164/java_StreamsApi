@@ -16,7 +16,7 @@ public class map_it {
  
     System.out.println(map.apply(9));
    
-    //lamda implementation as ot is functional interface
+    //lamda implementation as it is a functional interface
     
     Function<Integer,Integer> map2=n->n*2;
     
