@@ -12,5 +12,10 @@ public class Optionals {
 	 String can="ram";
 	Optional<String> str=names.stream().filter(n->n.equals(can)).findFirst();
 	System.out.println(str.get());
+	 	//or
+	String can2="raj";
+  String str2=names.stream().filter(n->n.equals(can2)).findAny().orElse("not found");
+	
+	//it will automaticaly create optional and save from null pointer exception
 }
 }
