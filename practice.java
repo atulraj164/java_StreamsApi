@@ -51,3 +51,16 @@ public class practice {
 		}
 		
 	}
+ public static void main(String[] args) {
+		
+    	 ArrayList<employe> emp = new ArrayList<>();
+         
+    	 employe e1=new employe(1,"sdd",12223);
+    	 emp.add(e1);
+    	 emp.add(new employe(1, "Rahul", 25000));
+         emp.add(new employe(2, "Amit", 30000));
+         emp.add(new employe(3, "Priya", 35000));
+         emp.add(new employe(4, "Neha", 28000));
+         emp.add(new employe(5, "Ravi", 40000));
+ }
+}
