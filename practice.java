@@ -84,15 +84,15 @@ public class practice {
          
          List<Integer> list = List.of(30, 10, 20, 20, 40, 15, 30);
          
-         list=list.stream()
+      /*   list=list.stream()
         		 .filter(n->n>20)
         		 .distinct()
         		 .sorted(Comparator.reverseOrder())
         		 .toList();
          
-         
+         */
 
-    	 
+    	 list=list.stream().filter(n->n%2==0).limit(4).skip(2).toList();
     	 Iterator <Integer>itr=list.iterator();
     	 
     	 while(itr.hasNext()) {
