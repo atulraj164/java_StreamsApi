@@ -62,5 +62,42 @@ public class practice {
          emp.add(new employe(3, "Priya", 35000));
          emp.add(new employe(4, "Neha", 28000));
          emp.add(new employe(5, "Ravi", 40000));
+
+	  //  Collections.sort(emp, new compare());
+         
+       //  Collections.sort(emp);
+        
+        
+      //   emp.forEach(n->System.out.println(n.salary));
+   
+    	 
+      //   List<Integer> arr = List.of(10, 20, 20, 30, 30, 30);
+    	 
+    	/* List<Integer>list=
+    			  arr.stream()
+    			 .filter(n->n>5).map(n->n*2)
+    			 .toList();
+    	 
+    	 */
+      //   List<Integer>list=arr.stream().filter(n->n>15).distinct().toList();
+         
+         
+         List<Integer> list = List.of(30, 10, 20, 20, 40, 15, 30);
+         
+         list=list.stream()
+        		 .filter(n->n>20)
+        		 .distinct()
+        		 .sorted(Comparator.reverseOrder())
+        		 .toList();
+         
+         
+
+    	 
+    	 Iterator <Integer>itr=list.iterator();
+    	 
+    	 while(itr.hasNext()) {
+    		 System.out.println(itr.next());
+    	 }
+    	 
  }
 }
