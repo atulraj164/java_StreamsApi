@@ -66,7 +66,9 @@ public class practice {
 
 	  emp.stream().sorted(Comparator.comparingInt((employe e)->e.salary).reversed())
                      .forEach(e->System.out.println(e.name+" "+e.salary));
-        
+
+	  Optional<employe> max= emp.stream().max(Comparator.comparingInt(e->e.salary));   
+       System.out.println(max.get().salary);
 
 	  //  Collections.sort(emp, new compare());
          
