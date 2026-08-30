@@ -97,7 +97,7 @@ public class practice {
          
          */
 	 //list.stream().filter(n->n%2==0).limit(4).skip(2).forEach(System.out::println);
-	  Optional<Integer> ans=list.stream().sorted(Comparator.reverseOrder()).min(Comparator.naturalOrder());
+/*	  Optional<Integer> ans=list.stream().sorted(Comparator.reverseOrder()).min(Comparator.naturalOrder());
          System.out.println(ans);
 	 
 	  long k=list.stream().filter(n->n%2==0).count();
@@ -111,6 +111,9 @@ public class practice {
       list=list.stream().filter(n->n%2==0).limit(4).skip(2).toList();
 	  Optional<Integer> ans=list.stream().sorted(Comparator.reverseOrder()).findFirst();
       System.out.println(ans);
+*/
+	 Optional<Integer> ans=list.stream().max(Comparator.naturalOrder());
+        System.out.println(ans);
 	 
       Iterator <Integer>itr=list.iterator();
     	 
