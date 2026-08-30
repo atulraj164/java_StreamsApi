@@ -63,6 +63,11 @@ public class practice {
          emp.add(new employe(4, "Neha", 28000));
          emp.add(new employe(5, "Ravi", 40000));
 
+
+	  emp.stream().sorted(Comparator.comparingInt((employe e)->e.salary).reversed())
+                     .forEach(e->System.out.println(e.name+" "+e.salary));
+        
+
 	  //  Collections.sort(emp, new compare());
          
        //  Collections.sort(emp);
@@ -91,11 +96,23 @@ public class practice {
         		 .toList();
          
          */
-
-    	 list=list.stream().filter(n->n%2==0).limit(4).skip(2).toList();
-    	 Iterator <Integer>itr=list.iterator();
+	 //list.stream().filter(n->n%2==0).limit(4).skip(2).forEach(System.out::println);
+	 
+	  long k=list.stream().filter(n->n%2==0).count();
+      System.out.println(k);
+       
+      System.out.println(list.stream().anyMatch(n->n%2==0));
+      System.out.println(list.stream().allMatch(n->n%2==0));
+      System.out.println(list.stream().noneMatch(n->n>50));
+       
+       
+      list=list.stream().filter(n->n%2==0).limit(4).skip(2).toList();
+	  Optional<Integer> ans=list.stream().sorted(Comparator.reverseOrder()).findFirst();
+      System.out.println(ans);
+	 
+      Iterator <Integer>itr=list.iterator();
     	 
-    	 while(itr.hasNext()) {
+      while(itr.hasNext()) {
     		 System.out.println(itr.next());
     	 }
     	 
