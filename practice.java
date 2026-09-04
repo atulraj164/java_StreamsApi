@@ -114,7 +114,7 @@ public class practice {
 	  Optional<Integer> ans=list.stream().sorted(Comparator.reverseOrder()).findFirst();
       System.out.println(ans);
 */
-	 Optional<Integer> ans=list.stream().max(Comparator.naturalOrder());
+	/* Optional<Integer> ans=list.stream().max(Comparator.naturalOrder());
         System.out.println(ans);
    List<Integer> nums = List.of(10, 20, 10, 30, 20, 40, 30);
          
@@ -127,6 +127,19 @@ public class practice {
       while(itr.hasNext()) {
     		 System.out.println(itr.next());
     	 }
-    	 
+	 */
+
+	     List<Integer> nums = List.of(10, 50, 20, 80, 30, 80);
+        System.out.println(nums.stream().
+						   distinct().
+						   sorted(Comparator.reverseOrder())
+						   .skip(1)
+						   .findFirst());   
+    	  List<String> names =
+        		    List.of("Atul", "Aman", "Rahul", "Ankit", "Rohit", "Ajay");
+                names.stream()
+					.filter(n->n.indexOf("A")==0)
+					.toList()
+					.forEach(System.out::println);
  }
 }
