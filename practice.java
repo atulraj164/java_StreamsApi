@@ -116,6 +116,11 @@ public class practice {
 */
 	 Optional<Integer> ans=list.stream().max(Comparator.naturalOrder());
         System.out.println(ans);
+   List<Integer> nums = List.of(10, 20, 10, 30, 20, 40, 30);
+         
+        Optional<Integer> sum=nums.stream().sorted(Comparator.reverseOrder()).findFirst();
+        nums.stream().distinct().toList().forEach(System.out::println);
+
 	 
       Iterator <Integer>itr=list.iterator();
     	 
