@@ -1,0 +1,7 @@
+public class BifunctionalandUnanaryFunction {
+      public static void main(String[] args) {
+	    BiFunction<Integer,Integer,Integer>f=(a,b)->a*b;
+	    int x=f.apply(10,20);
+	    System.out.println(x);
+	}
+}
