@@ -1,0 +1,10 @@
+public classunaryFunction {
+       public static void main(String[] args) {
+	     UnaryOperator <Integer> u=a->a*a;//take and return boath same type
+	     System.out.println(u.apply(55));
+	    
+	     IntUnaryOperator iu=a->a*a;
+	     System.out.println(iu.applyAsInt(55));
+	     
+	}
+}
