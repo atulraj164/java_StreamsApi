@@ -13,6 +13,11 @@ public class primitiveFunctions {
   
 	     DoubleFunction<String>fs=a->a+" value";//input->double op->string
 	     System.out.println(fs.apply(4));
+
+  ToDoubleFunction<Integer>d=a->a+23;
+	     double s=d.applyAsDouble(33);
+	     System.out.println(s);
+	    
 	    
 	}
 }
