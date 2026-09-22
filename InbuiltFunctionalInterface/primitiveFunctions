@@ -9,6 +9,10 @@ public class primitiveFunctions {
        public static void main(String[] args) {
 	     IntFunction<String>f=a->a+" value";
 	     System.out.println(f.apply(4));
+
+  
+	     DoubleFunction<String>fs=a->a+" value";//input->double op->string
+	     System.out.println(fs.apply(4));
 	    
 	}
 }
