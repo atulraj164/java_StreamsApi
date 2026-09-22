@@ -3,5 +3,16 @@ public class BifunctionalandUnanaryFunction {
 	    BiFunction<Integer,Integer,Integer>f=(a,b)->a*b;
 	    int x=f.apply(10,20);
 	    System.out.println(x);
+
+ BiFunction<Integer,Integer,String>f1=(a,b)->"this is"+a*b+"";
+	    String x=f1.apply(10,20);
+	    System.out.println(x);
 	}
+  BiPredicate<Integer,Integer>p=(a,b)->a.equals(b);
+	    boolean x=p.test(3, 3);
+	    System.out.println(x);
+
+BiConsumer<Integer,Integer>c=(a,b)->System.out.println(a+" "+b);
+	    c.accept(34, 32);
+	    
 }
