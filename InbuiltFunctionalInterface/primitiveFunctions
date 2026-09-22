@@ -17,7 +17,10 @@ public class primitiveFunctions {
   ToDoubleFunction<Integer>d=a->a+23;
 	     double s=d.applyAsDouble(33);
 	     System.out.println(s);
-	    
+
+
+	     IntUnaryOperator iu=a->a*a;
+	     System.out.println(iu.applyAsInt(55));
 	    
 	}
 }
