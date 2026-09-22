@@ -1,0 +1,14 @@
+package Functional_programing;
+
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import java.util.function.BiPredicate;
+import java.util.function.IntFunction;
+
+public class primitiveFunctions {
+       public static void main(String[] args) {
+	     IntFunction<String>f=a->a+" value";
+	     System.out.println(f.apply(4));
+	    
+	}
+}
